@@ -121,3 +121,17 @@ podEnvVars:
   env: "debug"
   ginMode: "debug"
   credentialsPath: "/app/firebase-key.json"
+
+
+metabase:
+  enabled: true
+  database:
+    type: postgres
+    host: postgresql  # This should match your PostgreSQL service name
+    port: 5432
+    dbname: ""
+    username: ""
+    password: ""
+  service:
+    type: ClusterIP
+    port: 3000
